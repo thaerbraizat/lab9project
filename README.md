@@ -1,7 +1,7 @@
 # lab9project
 
 ## Deployment link
- [link](https://basic-express-s.herokuapp.com/)
+ [link](https://projectts.herokuapp.com/)
 
 ## Author: Thaer Braizat AND Saif Momani
 
