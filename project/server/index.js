@@ -93,7 +93,7 @@ app.delete('/list/:id', bearerAuth(userModel), acl("delete") , async (req, res) 
     res.status(204).json(deletedPerson);
 });
 
-app.get('/list/:id', bearerAuth(userModel), acl("read") ,  async(req, res) => {
+app.get('/list/:customerId', bearerAuth(userModel), acl("read") ,  async(req, res) => {
     const customerId = req.params.customerId; 
     console.log(customerId);
     let notes = await orderModel.findAll({ where: {customerId: customerId} });
