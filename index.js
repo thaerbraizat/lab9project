@@ -101,7 +101,7 @@ app.get('/list/:customerId', bearerAuth(userModel), acl("read") ,  async(req, re
 });
 
 db.sync().then(() => {
-    app.listen(4000, () => console.log('running on 4000'))
+    app.listen(process.env.PORT, () => console.log('running on 4000'))
 }).catch((e) => {
     console.error(e)
 });
